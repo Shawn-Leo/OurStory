@@ -41,6 +41,7 @@ class ViewController: UIViewController, WebSocketDelegate {
      **************************************************************************************/
     func didReceive(event: WebSocketEvent, client: WebSocket) {
         switch event {
+        /*.当客户端连接到服务器时，收到一个.connected信息，触发相关case，向控制台输出"websocket is connected:\(headers)"，向服务器发送“Hi Server".*/
         case .connected(let headers):
             isConnected = true
             print("websocket is connected: \(headers)")
