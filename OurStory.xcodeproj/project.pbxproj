@@ -15,6 +15,7 @@
 		1857211624BDE96B0017C25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857211424BDE96B0017C25A /* LaunchScreen.storyboard */; };
 		1857212124BDE96B0017C25A /* OurStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857212024BDE96B0017C25A /* OurStoryTests.swift */; };
 		1857212C24BDE96B0017C25A /* OurStoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857212B24BDE96B0017C25A /* OurStoryUITests.swift */; };
+		18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F86724C4AC060000F991 /* MessageReceived.swift */; };
 		A4D63D12FE6B7EF2C8BD531F /* Pods_OurStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6076F2BF23974A4145515664 /* Pods_OurStory.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		1857212B24BDE96B0017C25A /* OurStoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurStoryUITests.swift; sourceTree = "<group>"; };
 		1857212D24BDE96B0017C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1868322724C1E5A700A3A917 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		18C8F86724C4AC060000F991 /* MessageReceived.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReceived.swift; sourceTree = "<group>"; };
 		6076F2BF23974A4145515664 /* Pods_OurStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A68C11E88D158AE4C1ED6C8 /* Pods-OurStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurStory.debug.xcconfig"; path = "Target Support Files/Pods-OurStory/Pods-OurStory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				1857211224BDE96B0017C25A /* Assets.xcassets */,
 				1857211424BDE96B0017C25A /* LaunchScreen.storyboard */,
 				1857211724BDE96B0017C25A /* Info.plist */,
+				18C8F86724C4AC060000F991 /* MessageReceived.swift */,
 			);
 			path = OurStory;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */,
 				1857210E24BDE9680017C25A /* ViewController.swift in Sources */,
 				1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */,
 				1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */,
