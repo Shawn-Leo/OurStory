@@ -12,22 +12,23 @@ import Starscream
 
 class ViewController: UIViewController, WebSocketDelegate {
     
-    var socket: WebSocket!  //这个变量即为WebSocket的关键变量
+    var socket: WebSocket!  // 这个变量即为WebSocket的关键变量
     var isConnected = false
     let server = WebSocketServer()
         
     override func viewDidLoad() {
         super.viewDidLoad()
         //https://echo.websocket.org
-        var request = URLRequest(url: URL(string: "ws://192.168.31.88:4396/")!) //此为服务器的ip和端口信息，目前暂时以魔法值存储
+        var request = URLRequest(url: URL(string: "ws://192.168.31.88:4396/")!)
+        // 此为服务器的ip和端口信息，目前暂时以魔法值存储
         request.timeoutInterval = 5
-        socket = WebSocket(request: request) //创建了一个socket变量
+        socket = WebSocket(request: request) // 创建了一个socket变量
         socket.delegate = self
-        socket.connect()  //连接到服务器
+        socket.connect()  // 连接到服务器
     }
 
     
-    //析构函数
+    // 析构函数
     deinit {
       socket.disconnect()
       socket.delegate = nil
