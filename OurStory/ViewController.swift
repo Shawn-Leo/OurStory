@@ -19,7 +19,7 @@ class ViewController: UIViewController, WebSocketDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //https://echo.websocket.org
-        var request = URLRequest(url: URL(string: "ws://192.168.31.88:4396/")!)
+        var request = URLRequest(url: URL(string: "ws://182.92.217.15:80/")!)
         // 此为服务器的ip和端口信息，目前暂时以魔法值存储
         request.timeoutInterval = 5
         socket = WebSocket(request: request) // 创建了一个socket变量
