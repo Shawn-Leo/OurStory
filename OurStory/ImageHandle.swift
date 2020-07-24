@@ -5,7 +5,7 @@
 //  Created by Shawn Leo on 2020/7/23.
 //  Copyright © 2020 Tsinghua ios Club. All rights reserved.
 //
-//  此文件中定义了处理图片的三个函数，分别为编码imageDecode，转码imageEncode，和另存为imageSave
+//  此文件中定义了处理图片的三种函数，分别为编码imageDecode，转码imageEncode，和另存为imageSave
 //  参考了https://www.hangge.com/blog/cache/detail_1711.html中的部分代码，特此鸣谢
 //
 
@@ -110,7 +110,7 @@ func imageSave(imageName: String, type: String, imageDir: String, image: UIImage
 }
 
 // 以下为示例代码，为这三个函数的基本用法
-// let base64ImageData = imageDecode(type: "jpg", imageName: "YourImageName")
+// let base64ImageData = imageFromProjectDecode(type: "jpg", imageName: "YourImageName")
 // let image = imageEncode(base64Data: base64ImageData)
 // imageSave(imageName: "1", type: "jpg", imageDir: "/Users/apple/Desktop/", image: image)
 // 通过这个方式可以将工程中的"YourImageName.jpg"另存到桌面上
