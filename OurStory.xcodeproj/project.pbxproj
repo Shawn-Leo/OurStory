@@ -19,6 +19,7 @@
 		18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F86724C4AC060000F991 /* MessageReceived.swift */; };
 		A4D63D12FE6B7EF2C8BD531F /* Pods_OurStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6076F2BF23974A4145515664 /* Pods_OurStory.framework */; };
 		FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */; };
+		FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */; };
 		FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		6076F2BF23974A4145515664 /* Pods_OurStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A68C11E88D158AE4C1ED6C8 /* Pods-OurStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurStory.debug.xcconfig"; path = "Target Support Files/Pods-OurStory/Pods-OurStory.debug.xcconfig"; sourceTree = "<group>"; };
 		FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +122,7 @@
 				FAFAAB4624D2330400C83BDA /* Supporting Files */,
 				1857210D24BDE9680017C25A /* ViewController.swift */,
 				1857210F24BDE9680017C25A /* Main.storyboard */,
+				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
 				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
 				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
 				18C8F86724C4AC060000F991 /* MessageReceived.swift */,
@@ -365,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */,
 				FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */,
 				18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */,
 				1857210E24BDE9680017C25A /* ViewController.swift in Sources */,
