@@ -30,44 +30,40 @@ class RegisterPageViewController: AuthViewController {
         let userRepeatPassword = repeatPasswordTextField.text
         
         // Check for empty fields
-        if (userName != nil) && (userPassword != nil) && (userRepeatPassword != nil) && (userIdentifier != nil)
-        {
+        if (userName != nil) && (userPassword != nil) && (userRepeatPassword != nil) && (userIdentifier != nil) {
             if userName!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty || userIdentifier!.isEmpty
             {
                 // Display an alert message
-                displayMyAlertMessage("All fields are required!")
+                displayMyAlertMessage("Alert", "All fields are required!")
                 return
             }
         } else {
-            // Display an alert message
-            
+            print("Register page alert: nil is produced!")
             return
         }
         
         // Check if passwords match
         if userPassword! != userRepeatPassword! {
             // Display an alert message
-            displayMyAlertMessage("Passwords do not match!")
+            displayMyAlertMessage("Alert", "Passwords do not match!")
             return
         }
         
-        // Store data
+        // Do registration
         register(ID: userIdentifier!, password: userPassword!, name: userName!)
         
-        
-        // Display alert message with confirmation
-        
+        // Display notification message with confirmation
+//        let myAlert = UIAlertController(title: "", message: "Registration is successful. Thank you!", preferredStyle: UIAlertController.Style.alert)
+//        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) {
+//            action in
+//            self.dismiss(animated: true, completion: nil)
+//        }
+//        myAlert.addAction(okAction)
+//        present(myAlert, animated: true, completion: nil)
         
     }
     
-    func displayMyAlertMessage(_ userMessage: String) {
-        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertController.Style.alert)
-        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-        
-        myAlert.addAction(okAction)
-        
-        present(self, animated: true, completion: nil)
-    }
+    
     
     
 

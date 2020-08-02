@@ -25,6 +25,7 @@
 		FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */; };
 		FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */; };
 		FA9F6C5B24D645AF00438FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9F6C5A24D645AF00438FD1 /* Main.storyboard */; };
+		FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */; };
 		FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		FA9F6C5A24D645AF00438FD1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				1857210D24BDE9680017C25A /* AuthViewController.swift */,
 				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
 				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
+				FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */,
 				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
 				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
 				18C8F86724C4AC060000F991 /* MessageReceived.swift */,
@@ -388,6 +391,7 @@
 				189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */,
 				18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */,
 				1857210E24BDE9680017C25A /* AuthViewController.swift in Sources */,
+				FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */,
 				FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */,
 				189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */,
 				189C350A24D0064D00A7F0BC /* Register.swift in Sources */,

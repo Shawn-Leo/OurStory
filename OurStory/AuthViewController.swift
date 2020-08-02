@@ -21,7 +21,7 @@ class AuthViewController: UIViewController, WebSocketDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //https://echo.websocket.org
+        // https://echo.websocket.org
         var request = URLRequest(url: URL(string: "ws://182.92.217.15:80/")!)
         // 此为服务器的ip和端口信息，目前暂时以魔法值存储
         request.timeoutInterval = 5
@@ -43,6 +43,16 @@ class AuthViewController: UIViewController, WebSocketDelegate {
     func login(ID:String, password: String){
         let time = self.dateformatter.string(from: Date())
         socket.write(string: "Login " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(String(connectionIndex).count) +  " " + String(connectionIndex) + " " + "19 " + time)
+    }
+    
+    // 提示信息显示函数, ok按键不作任何处理
+    func displayMyAlertMessage(_ title: String,_ userMessage: String) {
+        
+        let myAlert = UIAlertController(title: title, message: userMessage, preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+        myAlert.addAction(okAction)
+        
+        present(myAlert, animated: true, completion: nil)
     }
     
     // 析构函数

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Auth View Controller-->
+        <!--Login Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuthViewController" customModule="OurStory" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginPageViewController" customModule="OurStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tt-4Q-lhm" customClass="DesignableView" customModule="OurStory" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WmV-0H-r42">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User identifier" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WmV-0H-r42">
                                                                         <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="50" id="R7q-O5-RRR"/>
@@ -120,6 +120,9 @@
                                                                 <integer key="value" value="25"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAT-Na-xjH"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
@@ -150,7 +153,7 @@
                                                             <color key="titleColor" red="1" green="0.57466167211532593" blue="0.51152825355529785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="WZS-xs-a3v" kind="presentation" identifier="toRegisterView" id="xCM-1V-GdQ"/>
+                                                            <segue destination="WZS-xs-a3v" kind="presentation" identifier="LoginToRegister" id="tEl-XS-FPT"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -169,6 +172,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="userIdentifierTextField" destination="WmV-0H-r42" id="7Ky-XS-NJM"/>
+                        <outlet property="userPasswordTextField" destination="Tac-WV-9WX" id="bRr-Mn-psm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
