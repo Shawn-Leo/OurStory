@@ -15,19 +15,27 @@ class ViewController: UIViewController, WebSocketDelegate {
     var socket: WebSocket!  // 这个变量即为WebSocket的关键变量
     var isConnected = false
     let server = WebSocketServer()
+    let textfield = UITextField()
+    var connectionIndex:Int = -1
+    let dateformatter = DateFormatter()
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
         //https://echo.websocket.org
-        var request = URLRequest(url: URL(string: "ws://182.92.217.15:80/")!)
+        var request = URLRequest(url: URL(string: "ws://192.168.31.88:80/")!)
         // 此为服务器的ip和端口信息，目前暂时以魔法值存储
         request.timeoutInterval = 5
         socket = WebSocket(request: request) // 创建了一个socket变量
         socket.delegate = self
         socket.connect()  // 连接到服务器
+        dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
+        let list = messageSplit(message: "login 5 shawn 10 lxt5393792")
+        for word in list{
+            print(word)
+        }
     }
 
-    
     // 析构函数
     deinit {
       socket.disconnect()
