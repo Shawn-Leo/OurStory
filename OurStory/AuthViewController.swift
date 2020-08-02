@@ -10,8 +10,7 @@
 import UIKit
 import Starscream
 
-class ViewController: UIViewController, WebSocketDelegate {
-    
+class AuthViewController: UIViewController, WebSocketDelegate {
     var socket: WebSocket!  // 这个变量即为WebSocket的关键变量
     var isConnected = false
     let server = WebSocketServer()
@@ -19,11 +18,11 @@ class ViewController: UIViewController, WebSocketDelegate {
     var connectionIndex:Int = -1
     let dateformatter = DateFormatter()
     
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //https://echo.websocket.org
-        var request = URLRequest(url: URL(string: "ws://192.168.31.88:80/")!)
+        var request = URLRequest(url: URL(string: "ws://182.92.217.15:80/")!)
         // 此为服务器的ip和端口信息，目前暂时以魔法值存储
         request.timeoutInterval = 5
         socket = WebSocket(request: request) // 创建了一个socket变量
@@ -35,7 +34,17 @@ class ViewController: UIViewController, WebSocketDelegate {
             print(word)
         }
     }
-
+    
+    func register(ID:String, password: String, name: String){
+        let time = self.dateformatter.string(from: Date())
+        socket.write(string: "Register " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(name.count) + " " + name + " " + String(String(connectionIndex).count) +  " " + String(connectionIndex) + " " + "19 " + time)
+    }
+    
+    func login(ID:String, password: String){
+        let time = self.dateformatter.string(from: Date())
+        socket.write(string: "Login " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(String(connectionIndex).count) +  " " + String(connectionIndex) + " " + "19 " + time)
+    }
+    
     // 析构函数
     deinit {
       socket.disconnect()

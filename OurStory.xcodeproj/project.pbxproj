@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210924BDE9680017C25A /* AppDelegate.swift */; };
 		1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210B24BDE9680017C25A /* SceneDelegate.swift */; };
-		1857210E24BDE9680017C25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210D24BDE9680017C25A /* ViewController.swift */; };
+		1857210E24BDE9680017C25A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210D24BDE9680017C25A /* AuthViewController.swift */; };
 		1857211324BDE96B0017C25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1857211224BDE96B0017C25A /* Assets.xcassets */; };
 		1857211624BDE96B0017C25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857211424BDE96B0017C25A /* LaunchScreen.storyboard */; };
 		1857212124BDE96B0017C25A /* OurStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857212024BDE96B0017C25A /* OurStoryTests.swift */; };
 		1857212C24BDE96B0017C25A /* OurStoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857212B24BDE96B0017C25A /* OurStoryUITests.swift */; };
 		1879834B24C9A23100B95ADC /* ImageHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879834A24C9A23100B95ADC /* ImageHandle.swift */; };
-		189C350224CACA6900A7F0BC /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350124CACA6900A7F0BC /* Page.swift */; };
+		189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */; };
 		189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350324CF277C00A7F0BC /* MessageSplit.swift */; };
 		189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350524CF2A7300A7F0BC /* StringExtension.swift */; };
 		189C350824CFB82E00A7F0BC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350724CFB82E00A7F0BC /* Login.swift */; };
@@ -50,7 +50,7 @@
 		1857210624BDE9680017C25A /* OurStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857210924BDE9680017C25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1857210B24BDE9680017C25A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1857210D24BDE9680017C25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1857210D24BDE9680017C25A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		1857211224BDE96B0017C25A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1857211524BDE96B0017C25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1857211724BDE96B0017C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		1857212D24BDE96B0017C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1868322724C1E5A700A3A917 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1879834A24C9A23100B95ADC /* ImageHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandle.swift; sourceTree = "<group>"; };
-		189C350124CACA6900A7F0BC /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPageViewController.swift; sourceTree = "<group>"; };
 		189C350324CF277C00A7F0BC /* MessageSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSplit.swift; sourceTree = "<group>"; };
 		189C350524CF2A7300A7F0BC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		189C350724CFB82E00A7F0BC /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -130,19 +130,19 @@
 			children = (
 				FAFAAB4A24D39D2E00C83BDA /* General */,
 				FAFAAB4624D2330400C83BDA /* Supporting Files */,
-				1857210D24BDE9680017C25A /* ViewController.swift */,
+				1857210D24BDE9680017C25A /* AuthViewController.swift */,
+				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
 				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
 				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
 				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
 				18C8F86724C4AC060000F991 /* MessageReceived.swift */,
 				1879834A24C9A23100B95ADC /* ImageHandle.swift */,
-				189C350124CACA6900A7F0BC /* Page.swift */,
+				189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */,
 				189C350324CF277C00A7F0BC /* MessageSplit.swift */,
 				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
 				189C350724CFB82E00A7F0BC /* Login.swift */,
 				189C350924D0064D00A7F0BC /* Register.swift */,
 				1857211724BDE96B0017C25A /* Info.plist */,
-				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
 			);
 			path = OurStory;
 			sourceTree = "<group>";
@@ -387,9 +387,9 @@
 				FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */,
 				189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */,
 				18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */,
-				1857210E24BDE9680017C25A /* ViewController.swift in Sources */,
+				1857210E24BDE9680017C25A /* AuthViewController.swift in Sources */,
 				FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */,
-				189C350224CACA6900A7F0BC /* Page.swift in Sources */,
+				189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */,
 				189C350A24D0064D00A7F0BC /* Register.swift in Sources */,
 				189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */,
 				1879834B24C9A23100B95ADC /* ImageHandle.swift in Sources */,

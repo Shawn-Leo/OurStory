@@ -8,10 +8,11 @@
 
 import UIKit
 
-class RegisterPageViewController: UIViewController {
+class RegisterPageViewController: AuthViewController {
 
-    
-    @IBOutlet weak var userEmailTextField: UITextField!
+
+    @IBOutlet weak var userIdentifierTextField: UITextField!
+    @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
     
@@ -23,14 +24,16 @@ class RegisterPageViewController: UIViewController {
     
     @IBAction func registerButtonTapped(_ sender: Any) {
         
-        let userEmail = userEmailTextField.text
+        let userIdentifier = userIdentifierTextField.text
+        let userName = userNameTextField.text
         let userPassword = userPasswordTextField.text
         let userRepeatPassword = repeatPasswordTextField.text
         
         // Check for empty fields
-        if (userEmail != nil) && (userPassword != nil) && (userRepeatPassword != nil)
+        if (userName != nil) && (userPassword != nil) && (userRepeatPassword != nil) && (userIdentifier != nil)
         {
-            if userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty {
+            if userName!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty || userIdentifier!.isEmpty
+            {
                 // Display an alert message
                 displayMyAlertMessage("All fields are required!")
                 return
@@ -49,11 +52,10 @@ class RegisterPageViewController: UIViewController {
         }
         
         // Store data
+        register(ID: userIdentifier!, password: userPassword!, name: userName!)
         
-
         
         // Display alert message with confirmation
-        
         
         
     }
@@ -66,7 +68,6 @@ class RegisterPageViewController: UIViewController {
         
         present(self, animated: true, completion: nil)
     }
-    
     
     
 

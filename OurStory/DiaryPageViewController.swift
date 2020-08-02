@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Page: UIViewController{
+class DiaryPageViewController: UIViewController{
     var textFrameList = [UITextField]()
     var graphicViewList = [UIImageView]()
     var backgroundTask = UIBackgroundTaskIdentifier(rawValue: 1)
@@ -41,8 +41,8 @@ class Page: UIViewController{
         return ""
     }
     
-    func PageEncode(decodedPage: String) -> Page {
-        return Page()
+    func PageEncode(decodedPage: String) -> DiaryPageViewController {
+        return DiaryPageViewController()
     }
     
     @objc func Textpanned(_ recognizer:UIPanGestureRecognizer){

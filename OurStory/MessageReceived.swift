@@ -9,7 +9,7 @@
 import Foundation
 import Starscream
 
-extension ViewController {
+extension AuthViewController {
    // MARK: - WebSocketDelegate
     /**************************************************************************************.
         函数名称：didReceive
