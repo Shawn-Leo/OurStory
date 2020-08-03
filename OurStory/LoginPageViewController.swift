@@ -8,17 +8,48 @@
 
 import UIKit
 
-class LoginPageViewController: AuthViewController {
-
+class LoginPageViewController: UIViewController {
     
-    @IBOutlet weak var userIdentifierTextField: UITextField!
-    @IBOutlet weak var userPasswordTextField: UITextField!
+    static var isAuthenticated = false
+    static var loginStatus:Int = -1 {
+        didSet(oldLoginStatus){
+            // - 在这里写上loginStatus改变时的函数
+            // - 0代表密码错误，1代表成功登陆，2代表用户名不存在,-1代表登出状态
+            if isAuthenticated == false {
+                // - 如果尚未登陆
+                if let lvc = UIViewController.currentViewController() as? LoginPageViewController {
+                    switch loginStatus {
+                    case 0:
+                        lvc.displayMyAlertMessage("Alert", "Incorrect password!")
+                    case 1:
+                        lvc.displayMyAlertMessage("Notification", "Login successfully!")
+                        self.isAuthenticated = true
+                        // present home page
+                    case 2:
+                        lvc.displayMyAlertMessage("Alert", "The identifier do not exist!")
+                    default:
+                        break
+                    }
+                }
+            } else {
+                // - 已经登陆，直接跳转到主页
+                
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // login是用户看到的第一个界面，需要创建连接
+        SocketIOManager.sharedInstance.socketConnect()
+        SocketIOManager.sharedInstance.dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
         // Do any additional setup after loading the view.
     }
+    
+    @IBOutlet weak var userIdentifierTextField: UITextField!
+    @IBOutlet weak var userPasswordTextField: UITextField!
+
     
     @IBAction func loginButtonTapped(_ sender: Any) {
         let userIdentifier = userIdentifierTextField.text
@@ -38,9 +69,25 @@ class LoginPageViewController: AuthViewController {
         
         // Do login
         login(ID: userIdentifier!, password: userPassword!)
+        
+        // present home page
     }
     
-
+    
+    // - 提示信息显示函数, ok按键不作任何处理
+    func displayMyAlertMessage(_ title: String,_ userMessage: String) {
+        
+        let myAlert = UIAlertController(title: title, message: userMessage, preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+        myAlert.addAction(okAction)
+        
+        present(myAlert, animated: true, completion: nil)
+    }
+    
+    func login(ID:String, password: String){
+        let time = SocketIOManager.sharedInstance.dateformatter.string(from: Date())
+        SocketIOManager.sharedInstance.socket.write(string: "Login " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(String(SocketIOManager.sharedInstance.connectionIndex).count) +  " " + String(SocketIOManager.sharedInstance.connectionIndex) + " " + "19 " + time)
+    }
     /*
     // MARK: - Navigation
 

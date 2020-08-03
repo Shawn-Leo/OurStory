@@ -12,7 +12,7 @@ import Starscream
 
 class SocketIOManager: WebSocketDelegate
 {
-    static var shareInstance:SocketIOManager!
+    static var sharedInstance = SocketIOManager()
     var socket: WebSocket!  // 这个变量即为WebSocket的关键变量
     var isConnected = false
     var connectionIndex:Int = -1
@@ -22,9 +22,9 @@ class SocketIOManager: WebSocketDelegate
         var request = URLRequest(url: URL(string: "ws://182.92.217.15:80/")!)
         // 此为服务器的ip和端口信息，目前暂时以魔法值存储
         request.timeoutInterval = 5
-        SocketIOManager.shareInstance.socket = WebSocket(request: request) // 创建了一个socket变量
-        SocketIOManager.shareInstance.socket.delegate = self
-        SocketIOManager.shareInstance.socket.connect()  // 连接到服务器
+        SocketIOManager.sharedInstance.socket = WebSocket(request: request) // 创建了一个socket变量
+        SocketIOManager.sharedInstance.socket.delegate = self
+        SocketIOManager.sharedInstance.socket.connect()  // 连接到服务器
         
     }
     // MARK: - WebSocketDelegate
@@ -84,10 +84,10 @@ class SocketIOManager: WebSocketDelegate
             connectionIndex = messageSplit(message: message)[0].toInt()
         }
         else if type == "LoginStatus"{
-            AuthViewController.loginStatus = messageSplit(message: message)[0].toInt();
+            LoginPageViewController.loginStatus = messageSplit(message: message)[0].toInt();
         }
         else if type == "RegisterStatus"{
-            AuthViewController.registerStatus = messageSplit(message: message)[0].toInt();
+            RegisterPageViewController.registerStatus = messageSplit(message: message)[0].toInt();
             
         }
     }

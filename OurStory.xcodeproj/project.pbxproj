@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210924BDE9680017C25A /* AppDelegate.swift */; };
 		1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210B24BDE9680017C25A /* SceneDelegate.swift */; };
-		1857210E24BDE9680017C25A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210D24BDE9680017C25A /* AuthViewController.swift */; };
 		1857211324BDE96B0017C25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1857211224BDE96B0017C25A /* Assets.xcassets */; };
 		1857211624BDE96B0017C25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1857211424BDE96B0017C25A /* LaunchScreen.storyboard */; };
 		1857212124BDE96B0017C25A /* OurStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857212024BDE96B0017C25A /* OurStoryTests.swift */; };
@@ -19,9 +18,6 @@
 		189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */; };
 		189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350324CF277C00A7F0BC /* MessageSplit.swift */; };
 		189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350524CF2A7300A7F0BC /* StringExtension.swift */; };
-		189C350824CFB82E00A7F0BC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350724CFB82E00A7F0BC /* Login.swift */; };
-		189C350A24D0064D00A7F0BC /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350924D0064D00A7F0BC /* Register.swift */; };
-		18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8F86724C4AC060000F991 /* MessageReceived.swift */; };
 		A4D63D12FE6B7EF2C8BD531F /* Pods_OurStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6076F2BF23974A4145515664 /* Pods_OurStory.framework */; };
 		FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */; };
 		FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */; };
@@ -52,7 +48,6 @@
 		1857210624BDE9680017C25A /* OurStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857210924BDE9680017C25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1857210B24BDE9680017C25A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1857210D24BDE9680017C25A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		1857211224BDE96B0017C25A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1857211524BDE96B0017C25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1857211724BDE96B0017C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,9 +63,6 @@
 		189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPageViewController.swift; sourceTree = "<group>"; };
 		189C350324CF277C00A7F0BC /* MessageSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSplit.swift; sourceTree = "<group>"; };
 		189C350524CF2A7300A7F0BC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		189C350724CFB82E00A7F0BC /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		189C350924D0064D00A7F0BC /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		18C8F86724C4AC060000F991 /* MessageReceived.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageReceived.swift; sourceTree = "<group>"; };
 		6076F2BF23974A4145515664 /* Pods_OurStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A68C11E88D158AE4C1ED6C8 /* Pods-OurStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurStory.debug.xcconfig"; path = "Target Support Files/Pods-OurStory/Pods-OurStory.debug.xcconfig"; sourceTree = "<group>"; };
 		FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -135,19 +127,15 @@
 				1870B58124D7AEC40010EC4F /* SocketIOManager */,
 				FAFAAB4A24D39D2E00C83BDA /* General */,
 				FAFAAB4624D2330400C83BDA /* Supporting Files */,
-				1857210D24BDE9680017C25A /* AuthViewController.swift */,
 				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
 				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
 				FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */,
 				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
 				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
-				18C8F86724C4AC060000F991 /* MessageReceived.swift */,
 				1879834A24C9A23100B95ADC /* ImageHandle.swift */,
 				189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */,
 				189C350324CF277C00A7F0BC /* MessageSplit.swift */,
 				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
-				189C350724CFB82E00A7F0BC /* Login.swift */,
-				189C350924D0064D00A7F0BC /* Register.swift */,
 				1857211724BDE96B0017C25A /* Info.plist */,
 			);
 			path = OurStory;
@@ -401,15 +389,11 @@
 				1870B58324D7AF070010EC4F /* SocketIOManager.swift in Sources */,
 				FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */,
 				189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */,
-				18C8F86824C4AC060000F991 /* MessageReceived.swift in Sources */,
-				1857210E24BDE9680017C25A /* AuthViewController.swift in Sources */,
 				FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */,
 				FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */,
 				189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */,
-				189C350A24D0064D00A7F0BC /* Register.swift in Sources */,
 				189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */,
 				1879834B24C9A23100B95ADC /* ImageHandle.swift in Sources */,
-				189C350824CFB82E00A7F0BC /* Login.swift in Sources */,
 				1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */,
 				1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */,
 			);
