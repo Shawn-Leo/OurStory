@@ -10,36 +10,38 @@
 import UIKit
 import Starscream
 
-class AuthViewController: UIViewController, WebSocketDelegate {
-    var socket: WebSocket!  // 这个变量即为WebSocket的关键变量
-    var isConnected = false
-    let server = WebSocketServer()
-    let textfield = UITextField()
-    var connectionIndex:Int = -1
+class AuthViewController: UIViewController {
     let dateformatter = DateFormatter()
+    static var loginStatus:Int = -1 {
+        didSet(incomeLoginStatus){
+            // 在这里写上loginStatus改变时的函数
+            // 0代表密码错误，1代表成功登陆，2代表用户名不存在
+        }
+    }
+    static var registerStatus:Int = -1{
+        didSet(incomeRegisterStatus){
+            // 在这里写上registerStatus改变时的函数
+            // 0代表ID重复，1代表成功注册
+        }
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // https://echo.websocket.org
-        var request = URLRequest(url: URL(string: "ws://182.92.217.15:80/")!)
-        // 此为服务器的ip和端口信息，目前暂时以魔法值存储
-        request.timeoutInterval = 5
-        socket = WebSocket(request: request) // 创建了一个socket变量
-        socket.delegate = self
-        socket.connect()  // 连接到服务器
+        SocketIOManager.shareInstance.socketConnect()
         dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
         
     }
     
     func register(ID:String, password: String, name: String){
         let time = self.dateformatter.string(from: Date())
-        socket.write(string: "Register " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(name.count) + " " + name + " " + String(String(connectionIndex).count) +  " " + String(connectionIndex) + " " + "19 " + time)
+        SocketIOManager.shareInstance.socket.write(string: "Register " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(name.count) + " " + name + " " + String(String(SocketIOManager.shareInstance.connectionIndex).count) +  " " + String(SocketIOManager.shareInstance.connectionIndex) + " " + "19 " + time)
     }
     
     func login(ID:String, password: String){
         let time = self.dateformatter.string(from: Date())
-        socket.write(string: "Login " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(String(connectionIndex).count) +  " " + String(connectionIndex) + " " + "19 " + time)
+        SocketIOManager.shareInstance.socket.write(string: "Login " + String(ID.count) + " " + ID + " " + String(password.count) + " " + password + " " + String(String(SocketIOManager.shareInstance.connectionIndex).count) +  " " + String(SocketIOManager.shareInstance.connectionIndex) + " " + "19 " + time)
     }
     
     // 提示信息显示函数, ok按键不作任何处理
@@ -54,8 +56,8 @@ class AuthViewController: UIViewController, WebSocketDelegate {
     
     // 析构函数
     deinit {
-      socket.disconnect()
-      socket.delegate = nil
+      SocketIOManager.shareInstance.socket.disconnect()
+      SocketIOManager.shareInstance.socket.delegate = nil
     }
 
 }
