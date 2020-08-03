@@ -29,10 +29,7 @@ class AuthViewController: UIViewController, WebSocketDelegate {
         socket.delegate = self
         socket.connect()  // 连接到服务器
         dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
-        let list = messageSplit(message: "login 5 shawn 10 lxt5393792")
-        for word in list{
-            print(word)
-        }
+        
     }
     
     func register(ID:String, password: String, name: String){
