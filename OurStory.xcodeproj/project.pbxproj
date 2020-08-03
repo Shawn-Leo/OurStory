@@ -19,6 +19,9 @@
 		189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350324CF277C00A7F0BC /* MessageSplit.swift */; };
 		189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C350524CF2A7300A7F0BC /* StringExtension.swift */; };
 		A4D63D12FE6B7EF2C8BD531F /* Pods_OurStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6076F2BF23974A4145515664 /* Pods_OurStory.framework */; };
+		FA38DEB724D84046009599B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEB624D84046009599B3 /* HomeViewController.swift */; };
+		FA38DEB924D84053009599B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEB824D84053009599B3 /* MenuViewController.swift */; };
+		FA38DEBB24D84C18009599B3 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */; };
 		FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */; };
 		FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */; };
 		FA9F6C5B24D645AF00438FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9F6C5A24D645AF00438FD1 /* Main.storyboard */; };
@@ -65,6 +68,9 @@
 		189C350524CF2A7300A7F0BC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		6076F2BF23974A4145515664 /* Pods_OurStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A68C11E88D158AE4C1ED6C8 /* Pods-OurStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurStory.debug.xcconfig"; path = "Target Support Files/Pods-OurStory/Pods-OurStory.debug.xcconfig"; sourceTree = "<group>"; };
+		FA38DEB624D84046009599B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA38DEB824D84053009599B3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
 		FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		FA9F6C5A24D645AF00438FD1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 				FAFAAB4A24D39D2E00C83BDA /* General */,
 				FAFAAB4624D2330400C83BDA /* Supporting Files */,
 				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
+				FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */,
+				FA38DEB624D84046009599B3 /* HomeViewController.swift */,
+				FA38DEB824D84053009599B3 /* MenuViewController.swift */,
 				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
 				FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */,
 				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
@@ -392,10 +401,13 @@
 				FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */,
 				FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */,
 				189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */,
+				FA38DEB924D84053009599B3 /* MenuViewController.swift in Sources */,
 				189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */,
 				1879834B24C9A23100B95ADC /* ImageHandle.swift in Sources */,
 				1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */,
+				FA38DEBB24D84C18009599B3 /* SlideInTransition.swift in Sources */,
 				1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */,
+				FA38DEB724D84046009599B3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
