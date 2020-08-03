@@ -80,23 +80,30 @@ extension AuthViewController {
                 displayMyAlertMessage("Alert", "The identifier do not exist!")
                 return
             default:
-                return
+                print("Unexpected Login Status \(loginStatusIndex)")
             }
         }
         else if type == "RegisterStatus"{
             // 此处请俊鹏同学续写啦～
             // 经过split之后会得到一个数字，如果数字为1则代表登陆成功，若数字为0，说明用户名已被注册
             // 在编写界面的时候，请直接把类似于“两次密码不一样”“密码太短”等不依赖网络的情况扼杀在传输之前
-            let loginStatusIndex = messageSplit(message: message)[0].toInt();
-            switch loginStatusIndex {
+            let registerStatusIndex = messageSplit(message: message)[0].toInt();
+            switch registerStatusIndex {
             case 0:
                 // Incorrect password
                 displayMyAlertMessage("Alert", " This identifier has been registered!")
             case 1:
-                // login successfully
-                displayMyAlertMessage("Notification", "Register successfully!")
+                // Register successfully
+                let myAlert = UIAlertController(title: "", message: "Register successfully！", preferredStyle: UIAlertController.Style.alert)
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) {
+                    action in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                myAlert.addAction(okAction)
+                present(myAlert, animated: true, completion: nil)
+                
             default:
-                return
+                print("Unexpected Register Status \(registerStatusIndex)")
             }
         }
     }
