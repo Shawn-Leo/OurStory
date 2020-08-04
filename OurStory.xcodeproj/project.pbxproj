@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1854CB9924D9051A00013351 /* WriteAndLoadLoginInfomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */; };
 		1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210924BDE9680017C25A /* AppDelegate.swift */; };
 		1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1857210B24BDE9680017C25A /* SceneDelegate.swift */; };
 		1857211324BDE96B0017C25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1857211224BDE96B0017C25A /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		11ADF7946367BDB48854C114 /* Pods-OurStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurStory.release.xcconfig"; path = "Target Support Files/Pods-OurStory/Pods-OurStory.release.xcconfig"; sourceTree = "<group>"; };
+		1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteAndLoadLoginInfomation.swift; sourceTree = "<group>"; };
 		1857210624BDE9680017C25A /* OurStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857210924BDE9680017C25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1857210B24BDE9680017C25A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				189C350324CF277C00A7F0BC /* MessageSplit.swift */,
 				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
 				1857211724BDE96B0017C25A /* Info.plist */,
+				1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */,
 			);
 			path = OurStory;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */,
 				1879834B24C9A23100B95ADC /* ImageHandle.swift in Sources */,
 				1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */,
+				1854CB9924D9051A00013351 /* WriteAndLoadLoginInfomation.swift in Sources */,
 				FA38DEBB24D84C18009599B3 /* SlideInTransition.swift in Sources */,
 				1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */,
 				FA38DEB724D84046009599B3 /* HomeViewController.swift in Sources */,
