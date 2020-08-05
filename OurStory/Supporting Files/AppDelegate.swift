@@ -12,9 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        // Connect to the server
+        SocketIOManager.sharedInstance.socketConnect()
+        SocketIOManager.sharedInstance.dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
+        
         return true
     }
 

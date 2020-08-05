@@ -14,22 +14,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
         guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
-        menuViewController.didTapMenuType = { menuType in
-            print(menuType)
-        }
         menuViewController.modalPresentationStyle = .overCurrentContext
         menuViewController.transitioningDelegate = self
         present(menuViewController, animated: true)
-        
     }
     
-
     /*
     // MARK: - Navigation
 

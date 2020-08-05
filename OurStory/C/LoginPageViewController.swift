@@ -22,28 +22,21 @@ class LoginPageViewController: UIViewController {
                     case 0:
                         lvc.displayMyAlertMessage("Alert", "Incorrect password!")
                     case 1:
-                        lvc.displayMyAlertMessage("Notification", "Login successfully!")
+                        // lvc.displayMyAlertMessage("Notification", "Login successfully!")
                         self.isAuthenticated = true
-                        // present home page
+                        lvc.performSegue(withIdentifier: "LoginToHome", sender: nil)
                     case 2:
                         lvc.displayMyAlertMessage("Alert", "The identifier do not exist!")
                     default:
                         break
                     }
                 }
-            } else {
-                // - 已经登陆，直接跳转到主页
-                
             }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // login是用户看到的第一个界面，需要创建连接
-        SocketIOManager.sharedInstance.socketConnect()
-        SocketIOManager.sharedInstance.dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
         // Do any additional setup after loading the view.
     }
     
@@ -67,10 +60,9 @@ class LoginPageViewController: UIViewController {
             return
         }
         
-        // Do login
+        // Do login and give response
         login(ID: userIdentifier!, password: userPassword!)
         
-        // present home page
     }
     
     

@@ -5,6 +5,8 @@
 //  Created by Momo on 2020/8/3.
 //  Copyright © 2020 Tsinghua ios Club. All rights reserved.
 //
+//  This file defines the animation needed for side menu.
+//
 
 import UIKit
 
@@ -22,7 +24,7 @@ class SlideInTransition: NSObject, UIViewControllerAnimatedTransitioning {
         
         let containerView = transitionContext.containerView
         
-        let finalWidth = toViewController.view.bounds.width * 0.8
+        let finalWidth = toViewController.view.bounds.width * 0.5
         let finalHeight = toViewController.view.bounds.height
         
         if isPresenting {

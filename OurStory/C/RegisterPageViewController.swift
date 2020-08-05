@@ -76,7 +76,6 @@ class RegisterPageViewController: UIViewController {
         // Do registration
         register(ID: userIdentifier!, password: userPassword!, name: userName!)
         
-        
     }
     
     

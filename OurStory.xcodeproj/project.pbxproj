@@ -23,6 +23,7 @@
 		FA38DEB724D84046009599B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEB624D84046009599B3 /* HomeViewController.swift */; };
 		FA38DEB924D84053009599B3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEB824D84053009599B3 /* MenuViewController.swift */; };
 		FA38DEBB24D84C18009599B3 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */; };
+		FA38DEBD24DA3EE7009599B3 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38DEBC24DA3EE7009599B3 /* MemoryViewController.swift */; };
 		FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */; };
 		FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */; };
 		FA9F6C5B24D645AF00438FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9F6C5A24D645AF00438FD1 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		FA38DEB624D84046009599B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FA38DEB824D84053009599B3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		FA38DEBC24DA3EE7009599B3 /* MemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
 		FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		FA9F6C5A24D645AF00438FD1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -132,23 +134,19 @@
 		1857210824BDE9680017C25A /* OurStory */ = {
 			isa = PBXGroup;
 			children = (
-				1870B58124D7AEC40010EC4F /* SocketIOManager */,
-				FAFAAB4A24D39D2E00C83BDA /* General */,
 				FAFAAB4624D2330400C83BDA /* Supporting Files */,
+				1870B58124D7AEC40010EC4F /* SocketIOManager */,
+				FA38DEBF24DA4A64009599B3 /* M */,
+				FA38DEC024DA4A6B009599B3 /* V */,
+				FA38DEBE24DA4A27009599B3 /* C */,
+				FA38DEC124DA4A7C009599B3 /* Utilities */,
+				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
 				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
 				FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */,
-				FA38DEB624D84046009599B3 /* HomeViewController.swift */,
-				FA38DEB824D84053009599B3 /* MenuViewController.swift */,
-				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
-				FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */,
-				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
-				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
 				1879834A24C9A23100B95ADC /* ImageHandle.swift */,
 				189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */,
 				189C350324CF277C00A7F0BC /* MessageSplit.swift */,
-				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
 				1857211724BDE96B0017C25A /* Info.plist */,
-				1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */,
 			);
 			path = OurStory;
 			sourceTree = "<group>";
@@ -196,6 +194,42 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA38DEBE24DA4A27009599B3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FA38DEB624D84046009599B3 /* HomeViewController.swift */,
+				FA38DEBC24DA3EE7009599B3 /* MemoryViewController.swift */,
+				FA38DEB824D84053009599B3 /* MenuViewController.swift */,
+				FA9F6C5724D58A3C00438FD1 /* RegisterPageViewController.swift */,
+				FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		FA38DEBF24DA4A64009599B3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		FA38DEC024DA4A6B009599B3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		FA38DEC124DA4A7C009599B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
+				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
+				1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		FAFAAB4624D2330400C83BDA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,21 +239,6 @@
 				1857211224BDE96B0017C25A /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAFAAB4A24D39D2E00C83BDA /* General */ = {
-			isa = PBXGroup;
-			children = (
-				FAFAAB4B24D39D3E00C83BDA /* Auth */,
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
-		FAFAAB4B24D39D3E00C83BDA /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +429,7 @@
 				1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */,
 				1854CB9924D9051A00013351 /* WriteAndLoadLoginInfomation.swift in Sources */,
 				FA38DEBB24D84C18009599B3 /* SlideInTransition.swift in Sources */,
+				FA38DEBD24DA3EE7009599B3 /* MemoryViewController.swift in Sources */,
 				1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */,
 				FA38DEB724D84046009599B3 /* HomeViewController.swift in Sources */,
 			);
@@ -578,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OurStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OurStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
