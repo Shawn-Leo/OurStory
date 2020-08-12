@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         // Connect to the server
-        SocketIOManager.sharedInstance.socketConnect()
-        SocketIOManager.sharedInstance.dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
+//        SocketIOManager.sharedInstance.socketConnect()
+//        SocketIOManager.sharedInstance.dateformatter.dateFormat = "YYYY-MM-dd HH:mm:ss"// 自定义时间格式
         
         return true
     }
