@@ -50,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		11ADF7946367BDB48854C114 /* Pods-OurStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurStory.release.xcconfig"; path = "Target Support Files/Pods-OurStory/Pods-OurStory.release.xcconfig"; sourceTree = "<group>"; };
+		184107DB24EE17690032925C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteAndLoadLoginInfomation.swift; sourceTree = "<group>"; };
 		1857210624BDE9680017C25A /* OurStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857210924BDE9680017C25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		1857212724BDE96B0017C25A /* OurStoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OurStoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857212B24BDE96B0017C25A /* OurStoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurStoryUITests.swift; sourceTree = "<group>"; };
 		1857212D24BDE96B0017C25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1868322724C1E5A700A3A917 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1870B58224D7AF070010EC4F /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		1879834A24C9A23100B95ADC /* ImageHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandle.swift; sourceTree = "<group>"; };
 		189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPageViewController.swift; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		185720FD24BDE9680017C25A = {
 			isa = PBXGroup;
 			children = (
+				184107DB24EE17690032925C /* README.md */,
 				1857210824BDE9680017C25A /* OurStory */,
 				1857211F24BDE96B0017C25A /* OurStoryTests */,
-				1868322724C1E5A700A3A917 /* README.md */,
 				1857212A24BDE96B0017C25A /* OurStoryUITests */,
 				1857210724BDE9680017C25A /* Products */,
 				7334A0123BA43FC0CBD76944 /* Pods */,
@@ -143,9 +143,7 @@
 				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
 				FA9F6C5A24D645AF00438FD1 /* Main.storyboard */,
 				FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */,
-				1879834A24C9A23100B95ADC /* ImageHandle.swift */,
 				189C350124CACA6900A7F0BC /* DiaryPageViewController.swift */,
-				189C350324CF277C00A7F0BC /* MessageSplit.swift */,
 				1857211724BDE96B0017C25A /* Info.plist */,
 			);
 			path = OurStory;
@@ -226,6 +224,8 @@
 				FA9E005F24D45DD20049C77E /* UIViewController+Extensions.swift */,
 				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
 				1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */,
+				1879834A24C9A23100B95ADC /* ImageHandle.swift */,
+				189C350324CF277C00A7F0BC /* MessageSplit.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
