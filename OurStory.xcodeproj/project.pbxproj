@@ -35,6 +35,10 @@
 		FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */; };
 		FAB4291724E3841E009D68E5 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4291624E3841E009D68E5 /* MemoryViewController.swift */; };
 		FAB4291924E38E80009D68E5 /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAB4291824E38E80009D68E5 /* Books.plist */; };
+		FAB4291C24E4E1D6009D68E5 /* MemoryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4291B24E4E1D6009D68E5 /* MemoryLayout.swift */; };
+		FAB4291E24E56C16009D68E5 /* BookLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4291D24E56C16009D68E5 /* BookLayout.swift */; };
+		FAB4292024EE0DFF009D68E5 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4291F24EE0DFF009D68E5 /* CustomNavigationController.swift */; };
+		FAB4292224EE1064009D68E5 /* BookOpeningTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4292124EE1064009D68E5 /* BookOpeningTransition.swift */; };
 		FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,10 @@
 		FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		FAB4291624E3841E009D68E5 /* MemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
 		FAB4291824E38E80009D68E5 /* Books.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
+		FAB4291B24E4E1D6009D68E5 /* MemoryLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayout.swift; sourceTree = "<group>"; };
+		FAB4291D24E56C16009D68E5 /* BookLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLayout.swift; sourceTree = "<group>"; };
+		FAB4291F24EE0DFF009D68E5 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		FAB4292124EE1064009D68E5 /* BookOpeningTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookOpeningTransition.swift; sourceTree = "<group>"; };
 		FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +156,7 @@
 		1857210824BDE9680017C25A /* OurStory */ = {
 			isa = PBXGroup;
 			children = (
+				FAB4291A24E4E196009D68E5 /* Layout */,
 				FA56FD2024DCF1300054CDD2 /* Data */,
 				FA38DEC424DB90A2009599B3 /* Animation */,
 				FAFAAB4624D2330400C83BDA /* Supporting Files */,
@@ -215,6 +224,7 @@
 				FA9F6C5C24D67C4C00438FD1 /* LoginPageViewController.swift */,
 				FA56FD2324DD02C00054CDD2 /* BookViewController.swift */,
 				FAB4291624E3841E009D68E5 /* MemoryViewController.swift */,
+				FAB4291F24EE0DFF009D68E5 /* CustomNavigationController.swift */,
 				FA38DEC724DB9632009599B3 /* Cell */,
 			);
 			path = C;
@@ -254,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				FA38DEBA24D84C18009599B3 /* SlideInTransition.swift */,
+				FAB4292124EE1064009D68E5 /* BookOpeningTransition.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -273,6 +284,15 @@
 				FAB4291824E38E80009D68E5 /* Books.plist */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FAB4291A24E4E196009D68E5 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4291B24E4E1D6009D68E5 /* MemoryLayout.swift */,
+				FAB4291D24E56C16009D68E5 /* BookLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		FAFAAB4624D2330400C83BDA /* Supporting Files */ = {
@@ -466,16 +486,20 @@
 				FA9F6C5824D58A3C00438FD1 /* RegisterPageViewController.swift in Sources */,
 				1870B58324D7AF070010EC4F /* SocketIOManager.swift in Sources */,
 				FA56FD2424DD02C00054CDD2 /* BookViewController.swift in Sources */,
+				FAB4291E24E56C16009D68E5 /* BookLayout.swift in Sources */,
 				FA56FD2224DCF42D0054CDD2 /* UIImage+Helpers.swift in Sources */,
 				FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */,
 				189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */,
 				FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */,
 				FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */,
+				FAB4291C24E4E1D6009D68E5 /* MemoryLayout.swift in Sources */,
 				189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */,
+				FAB4292224EE1064009D68E5 /* BookOpeningTransition.swift in Sources */,
 				FA38DEB924D84053009599B3 /* MenuViewController.swift in Sources */,
 				189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */,
 				FA56FD2624DD09670054CDD2 /* BookPageCell.swift in Sources */,
 				FA38DECB24DB986B009599B3 /* Book.swift in Sources */,
+				FAB4292024EE0DFF009D68E5 /* CustomNavigationController.swift in Sources */,
 				1879834B24C9A23100B95ADC /* ImageHandle.swift in Sources */,
 				1857210A24BDE9680017C25A /* AppDelegate.swift in Sources */,
 				1854CB9924D9051A00013351 /* WriteAndLoadLoginInfomation.swift in Sources */,

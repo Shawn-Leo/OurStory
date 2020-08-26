@@ -23,6 +23,7 @@ class BookCoverCell: UICollectionViewCell {
     var image: UIImage? {
         didSet {
             let corners: UIRectCorner = [.topRight, .bottomRight]
+            // load the image to show after transformation
             imageView.image = image?.imageByScalingAndCroppingForSize(targetSize: bounds.size)?.imageWithRoundedCornersSize(cornerRadius: 20, corners: corners)
         }
     }

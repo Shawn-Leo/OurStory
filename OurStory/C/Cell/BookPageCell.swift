@@ -38,7 +38,7 @@ class BookPageCell: UICollectionViewCell {
         initShadowLayer()
     }
     
-    
+    // 抗锯齿处理
     func setupAntialiasing() {
         layer.allowsEdgeAntialiasing = true
         imageView.layer.allowsEdgeAntialiasing = true
@@ -58,7 +58,7 @@ class BookPageCell: UICollectionViewCell {
     func getRatioFromTransform() -> CGFloat {
         var ratio: CGFloat = 0
         
-        let rotationY = CGFloat(layer.value(forKeyPath: "transform.rotation.y") as! Float)
+        let rotationY = CGFloat((layer.value(forKeyPath: "transform.rotation.y") as! NSNumber).floatValue)
         if !isRightPage {
             let progress = -(1 - rotationY / CGFloat(Float.pi/2))
             ratio = progress
@@ -100,7 +100,7 @@ class BookPageCell: UICollectionViewCell {
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.40).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.50).cgColor,
                 UIColor.darkGray.withAlphaComponent(inverseRatio * 0.55).cgColor
-            ) as! [UIColor]
+            ) as? [UIColor]
             shadowLayer.locations = NSArray(objects:
                 NSNumber(value: 0.00),
                 NSNumber(value: 0.50),
@@ -112,6 +112,23 @@ class BookPageCell: UICollectionViewCell {
         if !animated {
             CATransaction.commit()
         }
+    }
+    
+    // Applies the specified layout attributes to the view.
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        
+        if layoutAttributes.indexPath.item % 2 == 0 {
+            // right hand side of the book
+            layer.anchorPoint = CGPoint(x: 0, y: 0.5)
+            isRightPage = true
+        } else {
+            // left hand side of book
+            layer.anchorPoint = CGPoint(x: 1, y: 0.5)
+            isRightPage = false
+        }
+        
+        self.updateShadowLayer()
     }
     
 }

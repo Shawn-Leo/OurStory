@@ -21,9 +21,7 @@ class BookStore {
     }
     
     func loadBooks(plist: String) -> [Book] {
-        
         var books = [Book]()
-        
         if let path = Bundle.main.path(forResource: plist, ofType: "plist") {
             // Get data from plist file
             let rawData = try! Data(contentsOf: URL(fileURLWithPath: path))

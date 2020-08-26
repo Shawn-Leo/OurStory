@@ -5,6 +5,8 @@
 //  Created by MonBG on 2020/7/31.
 //  Copyright © 2020 Tsinghua ios Club. All rights reserved.
 //
+//  This class used to decorate text input box
+//
 
 import UIKit
 

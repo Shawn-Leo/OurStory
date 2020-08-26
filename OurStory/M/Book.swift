@@ -19,8 +19,8 @@ class Book {
         self.dict = dict
     }
     
-    // Use NsDictionary for reference purpose
-    // contains key "cover" and "pages"
+    // Use NsDictionary for reference purpose,
+    // which contains two keys "cover" and "pages"
     var dict: NSDictionary?
     
     

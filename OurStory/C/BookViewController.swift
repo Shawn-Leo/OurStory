@@ -5,7 +5,7 @@
 //  Created by Momo on 2020/8/7.
 //  Copyright © 2020 Tsinghua ios Club. All rights reserved.
 //
-//  This view controller is to display the pages of the book when you select a book from BooksViewController.
+//  This view controller is to display the pages of the book when you select a book from MemoryViewController.
 //
 
 import UIKit
@@ -18,10 +18,40 @@ class BookViewController: UICollectionViewController {
         }
     }
     
+    var recognizer: UIGestureRecognizer? {
+        didSet {
+            if let recognizer = recognizer {
+                collectionView?.addGestureRecognizer(recognizer)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+}
+
+
+// MARK: Helper Methods
+extension BookViewController {
+    
+    func openEditPage() {
+        
+    }
+    
+}
+
+
+// MARK: UICollectionViewDelegate
+extension BookViewController {
+    
+    // Action after an Item is selected
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // Edit the page
+        openEditPage()
     }
 }
 
