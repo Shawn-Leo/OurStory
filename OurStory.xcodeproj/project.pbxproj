@@ -39,6 +39,13 @@
 		FAB4291E24E56C16009D68E5 /* BookLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4291D24E56C16009D68E5 /* BookLayout.swift */; };
 		FAB4292024EE0DFF009D68E5 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4291F24EE0DFF009D68E5 /* CustomNavigationController.swift */; };
 		FAB4292224EE1064009D68E5 /* BookOpeningTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4292124EE1064009D68E5 /* BookOpeningTransition.swift */; };
+		FACD3D6524FF376800FD26D5 /* EditBookPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD3D6424FF376800FD26D5 /* EditBookPageViewController.swift */; };
+		FACD3D6924FF454E00FD26D5 /* StickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD3D6824FF454E00FD26D5 /* StickerCollectionView.swift */; };
+		FACD3D6C25009BDF00FD26D5 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD3D6A25009BDF00FD26D5 /* StickerCell.swift */; };
+		FACD3D6D25009BDF00FD26D5 /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACD3D6B25009BDF00FD26D5 /* StickerCell.xib */; };
+		FACD3D6F2500A61600FD26D5 /* Stickers.plist in Resources */ = {isa = PBXBuildFile; fileRef = FACD3D6E2500A61600FD26D5 /* Stickers.plist */; };
+		FACD3D712500E0A700FD26D5 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD3D702500E0A700FD26D5 /* UIView+Helpers.swift */; };
+		FACD3D732500E39000FD26D5 /* StickerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD3D722500E39000FD26D5 /* StickerLayout.swift */; };
 		FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +108,13 @@
 		FAB4291D24E56C16009D68E5 /* BookLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLayout.swift; sourceTree = "<group>"; };
 		FAB4291F24EE0DFF009D68E5 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		FAB4292124EE1064009D68E5 /* BookOpeningTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookOpeningTransition.swift; sourceTree = "<group>"; };
+		FACD3D6424FF376800FD26D5 /* EditBookPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookPageViewController.swift; sourceTree = "<group>"; };
+		FACD3D6824FF454E00FD26D5 /* StickerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCollectionView.swift; sourceTree = "<group>"; };
+		FACD3D6A25009BDF00FD26D5 /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		FACD3D6B25009BDF00FD26D5 /* StickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
+		FACD3D6E2500A61600FD26D5 /* Stickers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Stickers.plist; sourceTree = "<group>"; };
+		FACD3D702500E0A700FD26D5 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		FACD3D722500E39000FD26D5 /* StickerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerLayout.swift; sourceTree = "<group>"; };
 		FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +239,7 @@
 				FA56FD2324DD02C00054CDD2 /* BookViewController.swift */,
 				FAB4291624E3841E009D68E5 /* MemoryViewController.swift */,
 				FAB4291F24EE0DFF009D68E5 /* CustomNavigationController.swift */,
+				FACD3D6424FF376800FD26D5 /* EditBookPageViewController.swift */,
 				FA38DEC724DB9632009599B3 /* Cell */,
 			);
 			path = C;
@@ -245,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				FAFAAB4C24D448DF00C83BDA /* DesignableView.swift */,
+				FACD3D6824FF454E00FD26D5 /* StickerCollectionView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -256,6 +272,7 @@
 				189C350524CF2A7300A7F0BC /* StringExtension.swift */,
 				1854CB9824D9051A00013351 /* WriteAndLoadLoginInfomation.swift */,
 				FA56FD2124DCF42D0054CDD2 /* UIImage+Helpers.swift */,
+				FACD3D702500E0A700FD26D5 /* UIView+Helpers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -274,6 +291,8 @@
 			children = (
 				FA38DEC824DB964A009599B3 /* BookCoverCell.swift */,
 				FA56FD2524DD09670054CDD2 /* BookPageCell.swift */,
+				FACD3D6A25009BDF00FD26D5 /* StickerCell.swift */,
+				FACD3D6B25009BDF00FD26D5 /* StickerCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -282,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB4291824E38E80009D68E5 /* Books.plist */,
+				FACD3D6E2500A61600FD26D5 /* Stickers.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -291,6 +311,7 @@
 			children = (
 				FAB4291B24E4E1D6009D68E5 /* MemoryLayout.swift */,
 				FAB4291D24E56C16009D68E5 /* BookLayout.swift */,
+				FACD3D722500E39000FD26D5 /* StickerLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -412,7 +433,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACD3D6F2500A61600FD26D5 /* Stickers.plist in Resources */,
 				FA9F6C5B24D645AF00438FD1 /* Main.storyboard in Resources */,
+				FACD3D6D25009BDF00FD26D5 /* StickerCell.xib in Resources */,
 				1857211624BDE96B0017C25A /* LaunchScreen.storyboard in Resources */,
 				1857211324BDE96B0017C25A /* Assets.xcassets in Resources */,
 				FAB4291924E38E80009D68E5 /* Books.plist in Resources */,
@@ -490,12 +513,16 @@
 				FA56FD2224DCF42D0054CDD2 /* UIImage+Helpers.swift in Sources */,
 				FAFAAB4D24D448DF00C83BDA /* DesignableView.swift in Sources */,
 				189C350424CF277C00A7F0BC /* MessageSplit.swift in Sources */,
+				FACD3D732500E39000FD26D5 /* StickerLayout.swift in Sources */,
 				FA9F6C5D24D67C4D00438FD1 /* LoginPageViewController.swift in Sources */,
 				FA9E006024D45DD20049C77E /* UIViewController+Extensions.swift in Sources */,
+				FACD3D712500E0A700FD26D5 /* UIView+Helpers.swift in Sources */,
 				FAB4291C24E4E1D6009D68E5 /* MemoryLayout.swift in Sources */,
+				FACD3D6C25009BDF00FD26D5 /* StickerCell.swift in Sources */,
 				189C350224CACA6900A7F0BC /* DiaryPageViewController.swift in Sources */,
 				FAB4292224EE1064009D68E5 /* BookOpeningTransition.swift in Sources */,
 				FA38DEB924D84053009599B3 /* MenuViewController.swift in Sources */,
+				FACD3D6924FF454E00FD26D5 /* StickerCollectionView.swift in Sources */,
 				189C350624CF2A7300A7F0BC /* StringExtension.swift in Sources */,
 				FA56FD2624DD09670054CDD2 /* BookPageCell.swift in Sources */,
 				FA38DECB24DB986B009599B3 /* Book.swift in Sources */,
@@ -505,6 +532,7 @@
 				1854CB9924D9051A00013351 /* WriteAndLoadLoginInfomation.swift in Sources */,
 				FA38DEBB24D84C18009599B3 /* SlideInTransition.swift in Sources */,
 				1857210C24BDE9680017C25A /* SceneDelegate.swift in Sources */,
+				FACD3D6524FF376800FD26D5 /* EditBookPageViewController.swift in Sources */,
 				FAB4291724E3841E009D68E5 /* MemoryViewController.swift in Sources */,
 				FA38DECD24DB9893009599B3 /* BookStore.swift in Sources */,
 				FA38DEB724D84046009599B3 /* HomeViewController.swift in Sources */,

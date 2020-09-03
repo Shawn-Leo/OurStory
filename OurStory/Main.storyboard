@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxu-4d-GdX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hGQ-UJ-yfw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -192,6 +192,7 @@
                     <navigationItem key="navigationItem" id="Wpr-zG-7HI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TVi-EP-cWs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -282,6 +283,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVX-jk-lzW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="866.66666666666674" y="1486.6071428571429"/>
+        </scene>
+        <!--Edit Book Page View Controller-->
+        <scene sceneID="Owf-Na-bg4">
+            <objects>
+                <viewController id="hGQ-UJ-yfw" customClass="EditBookPageViewController" customModule="OurStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RiM-7a-oZM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieC-V8-5I4">
+                                <rect key="frame" x="0.0" y="817" width="414" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Yjm-bZ-Lhf"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="bg" image="background-l" width="42" style="plain" id="8v3-Fm-j05">
+                                        <inset key="imageInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem title="sticker" image="sticker-3" width="800" style="plain" id="JO3-O4-ypP">
+                                        <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem title="image" image="image" width="42" style="plain" id="KoR-aI-qih">
+                                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <color key="tintColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ieC-V8-5I4" firstAttribute="leading" secondItem="ZAL-rs-BkR" secondAttribute="leading" id="EJ3-lQ-rbN"/>
+                            <constraint firstItem="ieC-V8-5I4" firstAttribute="trailing" secondItem="ZAL-rs-BkR" secondAttribute="trailing" id="wOn-hh-5HX"/>
+                            <constraint firstItem="ZAL-rs-BkR" firstAttribute="bottom" secondItem="ieC-V8-5I4" secondAttribute="bottom" id="xoG-zD-3d4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZAL-rs-BkR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yuN-cL-lmT"/>
+                    <connections>
+                        <outlet property="bgBarButton" destination="8v3-Fm-j05" id="99p-5h-EOK"/>
+                        <outlet property="editToolBar" destination="ieC-V8-5I4" id="3Tm-O7-7Rr"/>
+                        <outlet property="imageBarButton" destination="KoR-aI-qih" id="D3F-yc-gts"/>
+                        <outlet property="stickerBarButton" destination="JO3-O4-ypP" id="1nt-ep-oDl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVv-fw-9a7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="2167"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="DUJ-q1-mwQ">
@@ -865,11 +914,14 @@
         <image name="Flag" width="32" height="32"/>
         <image name="Ourstory_icon" width="1500" height="1500"/>
         <image name="albums" width="32" height="32"/>
+        <image name="background-l" width="32" height="32"/>
         <image name="dashboard_button" width="32" height="32"/>
         <image name="exit" width="32" height="32"/>
         <image name="home" width="32" height="32"/>
+        <image name="image" width="32" height="32"/>
         <image name="profile" width="32" height="32"/>
         <image name="setting" width="32" height="32"/>
+        <image name="sticker-3" width="32" height="32"/>
         <image name="wrong" width="24" height="24"/>
     </resources>
 </document>
